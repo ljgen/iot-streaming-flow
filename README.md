@@ -33,9 +33,9 @@ Cassandra stores the processed data for scalable querying.
 
 ## **How It Works**
 
-![System Architecture "IoT Stream Flow: Real-Time Data Processing Pipeline"](images/iot-stream.jpg)
+![System Architecture "IoT Stream Flow: Real-Time Data Processing Pipeline"](iot-streaming.jpg)
 
 - **Python** generates simulated IoT data (device IDs, timestamps, sensor readings).
 - **Airflow** ingests the data into Kafka.
-- **Spark** processes Kafka streams in real time, performing transformations or analytics.
+- **Spark** processes Kafka streams in real time.
 - **Cassandra** stores the final processed data for querying.
