@@ -2,6 +2,7 @@
  A real-time pipeline that simulates IoT data with Python, orchestrates data ingestion to Kafka (in KRaft mode) using Airflow, processes the data with Spark, and stores it in Cassandra.
 
 ## **Project Overview**
+![](iot-streaming.jpg)
 IoT Stream Flow is a real-time data pipeline that:
 - Simulates IoT data using Python.
 - Orchestrates data ingestion to Kafka (KRaft mode) using Airflow.
@@ -32,9 +33,6 @@ Spark processes the data from Kafka in real time.
 Cassandra stores the processed data for scalable querying.
 
 ## **How It Works**
-
-![System Architecture "IoT Stream Flow: Real-Time Data Processing Pipeline"](iot-streaming.jpg)
-
 - **Python** generates simulated IoT data (device IDs, timestamps, sensor readings).
 - **Airflow** ingests the data into Kafka.
 - **Spark** processes Kafka streams in real time.
